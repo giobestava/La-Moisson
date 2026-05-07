@@ -13,8 +13,8 @@ import "./index.css";
 import App from "./App";
 
 import Interface from "./Pages/Interface/Interface";
-import Parcelles from "./Pages/Parcelles/Parcelles";
-// import Meteo from "./Components/Pages/Meteo";
+// import Parcelles from "./Pages/Parcelles/Parcelles";
+import Meteo from "./Pages/Meteo/Meteo";
 // import CoursGrains from "./Components/Pages/CoursGrains";
 // import Registre from "./Components/Pages/Registre";
 
@@ -23,9 +23,9 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      { path: "/interface", element: <Interface /> },
+      { path: "/moisson", element: <Interface /> },
       // { path: "/parcelles", element: <Parcelles /> },
-      // { path: "/meteo", element: <Meteo /> },
+      { path: "/meteo", element: <Meteo /> },
       // { path: "/cours-grains", element: <CoursGrains /> },
       // { path: "/registre", element: <Registre /> },
     ],

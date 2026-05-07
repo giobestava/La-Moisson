@@ -1,0 +1,211 @@
+.meteo-semaine {
+  flex: 1;
+
+  background: #fbf7ef;
+
+  border: 1px solid #eadfc8;
+
+  border-radius: 18px;
+
+  padding: 28px;
+
+  box-shadow: 0 8px 24px rgba(59, 46, 30, 0.08);
+
+  color: #3b2e1e;
+}
+
+.meteo-semaine h2 {
+  font-family: "Cinzel", serif;
+
+  font-size: 16px;
+
+  margin-bottom: 32px;
+}
+
+.semaine-grid {
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
+
+  gap: 14px;
+}
+
+.jour-card {
+  background: #f7f1e4;
+
+  border: 1px solid #eadfc8;
+
+  border-radius: 14px;
+
+  padding: 18px 12px;
+
+  text-align: center;
+
+  transition: 0.25s ease;
+}
+
+.jour-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 6px 18px rgba(59, 46, 30, 0.08);
+}
+
+.jour-card h3 {
+  font-family: "Cinzel", serif;
+
+  font-size: 14px;
+
+  margin-bottom: 18px;
+}
+
+.jour-sun {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 18px;
+}
+
+.mini-sun {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    #f7c65f 40%,
+    #e3a93a 100%
+  );
+
+  box-shadow:
+    0 0 0 6px rgba(247, 198, 95, 0.12),
+    0 0 18px rgba(227, 169, 58, 0.28);
+}
+
+.jour-temp {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  margin-bottom: 18px;
+}
+
+.jour-temp strong {
+  font-size: 20px;
+
+  color: #3b2e1e;
+}
+
+.jour-temp span {
+  color: #7a6d5b;
+}
+
+.jour-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  font-size: 13px;
+
+  color: #6e6254;
+}
+
+
+
+.mini-cloud {
+  width: 38px;
+  height: 22px;
+
+  background: #cfcfcf;
+
+  border-radius: 999px;
+
+  position: relative;
+}
+
+.mini-cloud::before {
+  content: "";
+
+  position: absolute;
+
+  width: 22px;
+  height: 22px;
+
+  background: #cfcfcf;
+
+  border-radius: 50%;
+
+  top: -10px;
+  left: 5px;
+}
+
+.mini-cloud::after {
+  content: "";
+
+  position: absolute;
+
+  width: 26px;
+  height: 26px;
+
+  background: #cfcfcf;
+
+  border-radius: 50%;
+
+  top: -14px;
+  right: 4px;
+}
+
+.mini-rain {
+  width: 38px;
+  height: 22px;
+
+  background: #cfcfcf;
+
+  border-radius: 999px;
+
+  position: relative;
+}
+
+.mini-rain::before {
+  content: "";
+
+  position: absolute;
+
+  width: 3px;
+  height: 12px;
+
+  background: #4f83a6;
+
+  left: 10px;
+  top: 26px;
+
+  border-radius: 999px;
+}
+
+.mini-rain::after {
+  content: "";
+
+  position: absolute;
+
+  width: 3px;
+  height: 12px;
+
+  background: #4f83a6;
+
+  right: 10px;
+  top: 26px;
+
+  border-radius: 999px;
+}
+
+
+
+@media (max-width: 1100px) {
+  .semaine-grid {
+    overflow-x: auto;
+
+    grid-template-columns: repeat(7, 120px);
+  }
+}
