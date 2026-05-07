@@ -17,7 +17,7 @@ import App from "./App";
 
 /* PAGES */
 import Interface from "./Pages/Interface/Interface";
-// import Parcelles from "./Pages/Parcelles/Parcelles";
+import Parcelles from "./Pages/Parcelles/Parcelles";
 import CoursDesGrains from "./Pages/CoursDesGrains/CoursDesGrains";
 import RegistreRecolte from "./Pages/RegistreRecolte/RegistreRecolte";
 import Meteo from "./Pages/Meteo/Meteo";
@@ -25,42 +25,41 @@ import Home from "./Pages/Home/Home";
 
 /* ROUTER */
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <App />,
+	{
+		path: "/",
+		element: <App />,
 
-        children: [
-            {
-                path: "/",
-                element: <Home />,
-            },
-            
-            {
-                path: "/meteo",
-                element: < Meteo />,
-            },
-            
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
 
-            { path: "/moisson", element: <Interface /> },
+			{
+				path: "/meteo",
+				element: <Meteo />,
+			},
 
-            {
-                path: "/parcelles",
-                // element: <Parcelles propsParcelles={[]} />,
-            },
+			{ path: "/moisson", element: <Interface /> },
 
-            { path: "/registre", element: <RegistreRecolte /> },
+			{
+				path: "/parcelles",
+				element: <Parcelles />,
+			},
 
-            {
-                path: "/cours-grains",
-                element: <CoursDesGrains />,
-            },
-        ],
-    },
+			{ path: "/registre", element: <RegistreRecolte /> },
+
+			{
+				path: "/cours-grains",
+				element: <CoursDesGrains />,
+			},
+		],
+	},
 ]);
 
 /* RENDER */
 createRoot(document.getElementById("root")!).render(
-    <StrictMode>
-        <RouterProvider router={router} />
-    </StrictMode>,
+	<StrictMode>
+		<RouterProvider router={router} />
+	</StrictMode>,
 );
