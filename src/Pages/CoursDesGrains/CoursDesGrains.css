@@ -6,7 +6,7 @@
 	font-family: var(--font-heading);
 	font-size: var(--font-size-2xl);
 	font-weight: var(--font-weight-bold);
-	color: var(--color-primary);
+	/* color: var(--color-primary); */
 	text-transform: uppercase;
 	letter-spacing: var(--letter-spacing-heading);
 	text-align: left;
