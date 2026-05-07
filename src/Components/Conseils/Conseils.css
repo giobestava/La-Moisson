@@ -1,37 +1,48 @@
 .conseils-div-wrapper {
-	font-weight: bold;
 	color: var(--color-text);
 	font-family: var(--font-body);
-	border-radius: var(--radius-md);
-	background-image: url("src/assets/paysan.png");
+	border: 3px solid gold;
+	background-image: url("../../assets/paysan.png");
+	background-size: cover;
 	background-position: center;
-	background-size: contain;
 	background-repeat: no-repeat;
-	width: 40%;
-	aspect-ratio: 2004 / 785;
-	padding: 1rem;
+	min-height: 60vh;
+	width: 100%;
+	padding: 48px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 24px;
 }
 
 .conseils-div-p-title {
-	font-weight: bold;
-	color: var(--color-text);
-	font-family: var(--font-body);
+	font-family: var(--font-heading);
+	font-weight: 700;
+	font-size: 18px;
+	color: var(--color-primary);
 	text-transform: uppercase;
-	padding-bottom: 1rem;
+	letter-spacing: 0.1em;
 }
 
 .fade-in {
 	opacity: 1;
-	transition: opacity 0.5s ease;
+	transition: opacity 0.8s ease;
 }
+
 .fade-out {
 	opacity: 0;
-	transition: opacity 0.5s ease;
+	transition: opacity 0.8s ease;
 }
 
 .conseils-p {
-	width: 100%;
-	margin: auto;
-	padding-left: 10rem;
-	padding-right: 6rem;
+	font-family: var(--font-body);
+	font-size: 1.7rem;
+	font-style: italic;
+	font-weight: 600;
+	line-height: 1.7;
+	color: var(--color-primary);
+	width: 60%;
+	margin-left: auto;
+	padding-right: 2rem;
+	text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
 }

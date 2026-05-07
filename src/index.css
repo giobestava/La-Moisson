@@ -1081,3 +1081,9 @@ textarea {
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
 }
+
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}

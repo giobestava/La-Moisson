@@ -22,6 +22,7 @@ import CoursDesGrains from "./Pages/CoursDesGrains/CoursDesGrains";
 import RegistreRecolte from "./Pages/RegistreRecolte/RegistreRecolte";
 import Meteo from "./Pages/Meteo/Meteo";
 import Home from "./Pages/Home/Home";
+import Conseils from "./Components/Conseils/Conseils";
 
 /* ROUTER */
 const router = createBrowserRouter([
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
 				path: "/meteo",
 				element: <Meteo />,
 			},
-
+			{ path: "/conseils", element: <Conseils /> },
 			{ path: "/moisson", element: <Interface /> },
 
 			{
