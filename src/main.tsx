@@ -20,6 +20,9 @@ import Interface from "./Pages/Interface/Interface";
 import Parcelles from "./Pages/Parcelles/Parcelles";
 import CoursDesGrains from "./Pages/CoursDesGrains/CoursDesGrains";
 import RegistreRecolte from "./Pages/RegistreRecolte/RegistreRecolte";
+import Meteo from "./Pages/Meteo/Meteo";
+import Home from "./Pages/Home/Home";
+
 /* ROUTER */
 const router = createBrowserRouter([
 	{
@@ -29,17 +32,19 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/",
-				element: <Interface />,
+				element: <Home />,
 			},
 
 			{
-				path: "/interface",
-				element: <Interface />,
+				path: "/meteo",
+				element: <Meteo />,
 			},
+
+			{ path: "/moisson", element: <Interface /> },
 
 			{
 				path: "/parcelles",
-				element: <Parcelles propsParcelles={[]} />,
+				element: <Parcelles />,
 			},
 
 			{ path: "/registre", element: <RegistreRecolte /> },
