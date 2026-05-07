@@ -35,8 +35,6 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             
-
-             
             {
                 path: "/meteo",
                 element: < Meteo />,
